@@ -1,0 +1,138 @@
+# ==============================================================================
+# PROFESSIONAL PROJECT .GITIGNORE
+# Pragya IQ - FastAPI + Streamlit + PostgreSQL + AI/ML
+# ==============================================================================
+
+# =========================
+# Environment & Secrets
+# =========================
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+
+# Streamlit Secrets
+.streamlit/secrets.toml
+frontend/remembered_emails.json
+
+# =========================
+# Python Cache
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.tox/
+.ruff_cache/
+
+# =========================
+# Virtual Environments
+# =========================
+venv/
+.venv/
+env/
+
+# =========================
+# Node
+# =========================
+node_modules/
+frontend/node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# =========================
+# Database
+# =========================
+*.db
+*.sqlite
+*.sqlite3
+*.dump
+
+# =========================
+# Uploads / Generated Data
+# =========================
+backend/storage/
+storage/
+outputs/
+uploads/
+frontend/outputs/
+frontend/uploads/
+
+# =========================
+# Generated Reports
+# =========================
+*.pdf
+
+# =========================
+# Machine Learning Artifacts
+# =========================
+*.pkl
+*.joblib
+*.bin
+*.model
+*.ubj
+*.faiss
+models/
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Temporary Files
+# =========================
+*.tmp
+*.bak
+*.swp
+
+# Project Debug Output
+backend/failed_tests.txt
+backend/failed_tracebacks.txt
+backend/pytest_out.txt
+backend/pytest_out_2.txt
+backend/pytest_out_ai.txt
+git_files.txt
+modified_files.txt
+out_test.txt
+
+# =========================
+# IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Operating System
+# =========================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =========================
+# Debug / Analysis Files
+# =========================
+backend/all_tests_fixed.txt
+backend/check_paths.txt
+backend/cols.txt
+backend/db_inspect.txt
+backend/db_inspect_out.txt
+backend/db_inspection.txt
+backend/debug_date.txt
+backend/debug_mapping.txt
+backend/debug_mapping_raw.txt
+backend/err.txt
+backend/latest_files.txt
+backend/paths.txt
+backend/pytest_datasets_out.txt
+backend/test_trace.txt
+backend/traceback_fixed.txt
+
+diff_*.txt
+diff_services.txt

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium AI Chat Input</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0A0A0F;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            color: white;
+        }
+
+        .chat-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 20px;
+            background: rgba(18, 20, 32, 0.40);
+            border: 1px solid rgba(168, 85, 247, 0.20);
+            /* Very thin purple border */
+            border-radius: 9999px;
+            /* Rounded pill-shaped container */
+            padding: 8px 8px 8px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            transition: all 0.3s ease;
+            /* Smooth 300ms CSS transitions only */
+            box-shadow: none;
+            /* No flash by default */
+        }
+
+        /* On hover and focus, show a soft elegant purple glow around the entire input */
+        .chat-container:hover,
+        .chat-container:focus-within {
+            border-color: rgba(167, 139, 250, 0.4);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15), 0 0 15px rgba(167, 139, 250, 0.15);
+            /* Keep glow subtle, not flashy */
+            background: rgba(22, 25, 40, 0.50);
+        }
+
+        .chat-input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            color: #F8FAFC;
+            font-size: 16px;
+            font-family: 'Inter', sans-serif;
+            outline: none;
+            padding: 12px 16px 12px 0;
+            line-height: 1.5;
+            min-height: 24px;
+        }
+
+        .chat-input::placeholder {
+            color: #94A3B8;
+        }
+
+        /* The send button should have a premium purple gradient and a gentle glow on hover */
+        .send-btn {
+            width: 48px;
+            height: 48px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #7C3AED, #5B21B6);
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: none;
+            padding: 0;
+        }
+
+        .send-btn svg {
+            width: 20px;
+            height: 20px;
+            fill: none;
+            stroke: #FFFFFF;
+            stroke-width: 2.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .send-btn:hover {
+            transform: scale(1.05);
+            background: linear-gradient(135deg, #8B5CF6, #6D28D9);
+            box-shadow: 0 4px 15px rgba(124, 58, 237, 0.30);
+            /* Gentle glow on hover */
+        }
+
+        .send-btn:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Keep only: Input field, Send button -->
+    <div class="chat-container">
+        <input type="text" class="chat-input" placeholder="Ask anything about your business data...">
+        <button class="send-btn" title="Send message">
+            <svg viewBox="0 0 24 24">
+                <line x1="12" y1="19" x2="12" y2="5"></line>
+                <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+        </button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: bi_platform_db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: bi_platform
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d bi_platform"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: bi_platform_backend
+    restart: always
+    # Wait for the PostgreSQL service to be completely ready and accepting connections
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/.env
+    environment:
+      # Why the database host is "db" instead of "localhost" inside Docker Compose:
+      # Docker Compose automatically sets up a shared bridge network for all services in this file.
+      # Service names (like "db" and "backend") act as network DNS aliases. Every service gets its own
+      # loopback network space, meaning "localhost" inside the backend container refers to the backend itself,
+      # NOT the database utility. Therefore, we use the host "db" which resolves to the DB container's private IP.
+      DATABASE_URL: postgresql://postgres:postgres@db:5432/bi_platform
+    # Exposing dynamic config path
+    volumes:
+      # Keeps storage folder active outside container
+      - backend_storage:/app/storage
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8000/health || exit 1"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 20s
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: bi_platform_frontend
+    restart: always
+    # Wait for the backend API to be healthy before accepting user traffic
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "8501:8501"
+    environment:
+      # Why "backend" instead of "localhost":
+      # Inside Docker Compose, each service runs in its own network namespace.
+      # "localhost" inside the frontend container refers to the frontend container itself,
+      # NOT the FastAPI backend. We use the service name "backend" which Docker resolves
+      # to the backend container's private IP on the shared bridge network.
+      BACKEND_API_URL: http://backend:8000
+
+volumes:
+  postgres_data:
+    driver: local
+  backend_storage:
+    driver: local
+

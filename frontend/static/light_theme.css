@@ -1,0 +1,741 @@
+/* ==========================================================================
+   Light Mode Overrides (Pragya AI)
+   ========================================================================== */
+
+/* Main application layout and color palette */
+.stApp,
+[data-testid="stAppViewContainer"],
+html,
+body {
+    background: #F8FAFC !important;
+    background-color: #F8FAFC !important;
+    background-image: none !important;
+    color: #0F172A !important;
+
+    /* Force Streamlit's custom theme properties to adapt to Light Mode */
+    --theme-textColor: #0F172A !important;
+    --theme-default-textColor: #0F172A !important;
+    --theme-primaryColor: #7C3AED !important;
+    --theme-backgroundColor: #F8FAFC !important;
+    --theme-secondaryBackgroundColor: #FFFFFF !important;
+}
+
+/* Sidebar Overrides */
+[data-testid="stSidebar"] {
+    background-color: #FFFFFF !important;
+    border-right: 1px solid #E2E8F0 !important;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.05) !important;
+}
+
+[data-testid="stSidebar"] [data-testid="stBaseButton-headerNoBorder"] {
+    color: #64748B !important;
+}
+
+.sidebar-brand-name {
+    color: #0F172A !important;
+}
+
+.sidebar-brand-sub {
+    color: #64748B !important;
+}
+
+.sidebar-nav-section-label {
+    color: #94A3B8 !important;
+}
+
+.sidebar-profile-email {
+    color: #1E293B !important;
+}
+
+.sidebar-dataset-label {
+    color: #64748B !important;
+}
+
+.sidebar-footer-title {
+    color: #334155 !important;
+}
+
+.sidebar-footer-version {
+    color: #64748B !important;
+}
+
+.sidebar-footer-card {
+    background: #F1F5F9 !important;
+    border: 1px solid #E2E8F0 !important;
+    box-shadow: none !important;
+}
+
+a[data-testid="stPageLink-Link"],
+.custom-nav-item {
+    color: #475569 !important;
+}
+
+a[data-testid="stPageLink-Link"]:hover:not([aria-current="page"]),
+.custom-nav-item:hover:not(.disabled) {
+    background-color: #F1F5F9 !important;
+    color: #0F172A !important;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.02) !important;
+}
+
+/* Base Card Overrides */
+.kpi-card,
+.kpi-row-card,
+.kpi-mini-card,
+.enterprise-card,
+.filter-card,
+.welcome-card,
+div[data-testid="stVerticalBlockBorderWrapper"],
+.fabric-insight-card,
+.fabric-card-body,
+.metric-card,
+.feature-card,
+.insight-card,
+.desc-card,
+.info-card,
+.recommendation-card {
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+    background-image: none !important;
+    border: 1px solid #E2E8F0 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03) !important;
+}
+
+.kpi-card:hover,
+.kpi-row-card:hover,
+.enterprise-card:hover,
+div[data-testid="stVerticalBlockBorderWrapper"]:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04) !important;
+    border-color: #CBD5E1 !important;
+    transform: translateY(-2px) !important;
+}
+
+.kpi-card::before {
+    background: linear-gradient(90deg, #3B82F6 0%, #7C3AED 100%) !important;
+}
+
+.kpi-title,
+.kpi-mini-title,
+.kpi-h-label {
+    color: #64748B !important;
+}
+
+.kpi-value,
+.kpi-val,
+.kpi-mini-value,
+.kpi-h-val {
+    color: #0F172A !important;
+}
+
+/* Dividers */
+.sidebar-nav-divider,
+.sidebar-user-divider,
+.or-divider::before,
+.or-divider::after,
+.select-action-divider::before,
+.select-action-divider::after {
+    background-color: #E2E8F0 !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+}
+
+.or-divider,
+.select-action-divider {
+    color: #94A3B8 !important;
+}
+
+/* Inputs and Forms */
+input,
+textarea {
+    background-color: #FFFFFF !important;
+    color: #0F172A !important;
+    border: 1px solid #CBD5E1 !important;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #3B82F6 !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15) !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #94A3B8 !important;
+}
+
+div[data-baseweb="select"]>div {
+    background-color: #FFFFFF !important;
+    border: 1px solid #CBD5E1 !important;
+    color: #0F172A !important;
+}
+
+div[data-baseweb="select"]>div:hover {
+    border-color: #94A3B8 !important;
+}
+
+div[data-testid="stVerticalBlockBorderWrapper"],
+.kpi-card,
+.kpi-row-card,
+.enterprise-card,
+.pbi-selector {
+    background: rgba(255, 255, 255, 0.95) !important;
+    background-color: #FFFFFF !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03) !important;
+    border-top: 1px solid #E2E8F0 !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.timeline-container {
+    background: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.timeline-item {
+    border: none !important;
+}
+
+/* Native File Uploader Overrides */
+div[data-testid="stFileUploader"] {
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+    border: 1px dashed #CBD5E1 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03) !important;
+}
+
+div[data-testid="stFileUploader"]:hover {
+    border-color: #94A3B8 !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08) !important;
+    background: #FFFFFF !important;
+}
+
+section[data-testid="stFileUploaderDropzone"] {
+    background-color: transparent !important;
+}
+
+div[data-testid="stFileUploaderDropzoneInstructions"] {
+    color: #1E293B !important;
+}
+
+div[data-testid="stFileUploaderDropzoneInstructions"] small {
+    color: #64748B !important;
+}
+
+div[data-testid="stFileUploader"] button {
+    background-color: #F1F5F9 !important;
+    color: #0F172A !important;
+    border: 1px solid #CBD5E1 !important;
+}
+
+div[data-testid="stFileUploader"] button:hover {
+    background-color: #E2E8F0 !important;
+    color: #0F172A !important;
+}
+
+/* Copilot / Auth Text Overrides */
+.landing-hero-title {
+    background: linear-gradient(90deg, #2563EB 0%, #7C3AED 50%, #DB2777 100%) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.landing-subtitle {
+    color: #475569 !important;
+}
+
+.hero-welcome-text {
+    color: #0F172A !important;
+}
+
+.hero-subtitle {
+    color: #64748B !important;
+}
+
+.copilot-item {
+    border-bottom: 1px solid #E2E8F0 !important;
+}
+
+/* Dataframes / Tables */
+[data-testid="stDataFrame"] {
+    background-color: #F8FAFC !important;
+    filter: invert(1) hue-rotate(180deg) brightness(1.05) contrast(1.05) !important;
+}
+
+/* Dashboard Titles and Metadata */
+.dashboard-title-text,
+.dashboard-title {
+    color: #0F172A !important;
+}
+
+.dashboard-title-sub,
+.dashboard-subtitle {
+    color: #475569 !important;
+}
+
+.meta-chip,
+.meta-chip-domain,
+.last-updated,
+.chart-box-title,
+.demo-banner {
+    color: #1E293B !important;
+    background: #F1F5F9 !important;
+    background-color: #F1F5F9 !important;
+    border-color: #CBD5E1 !important;
+}
+
+.demo-banner *,
+.meta-chip * {
+    color: #1E293B !important;
+}
+
+/* Plotly SVGs Deep Target */
+.js-plotly-plot .plotly text,
+.js-plotly-plot .plotly .g-gtitle text {
+    fill: #334155 !important;
+}
+
+/* Global Typography Color Overrides */
+[data-testid="stAppViewContainer"] h1,
+[data-testid="stAppViewContainer"] h2,
+[data-testid="stAppViewContainer"] h3,
+[data-testid="stAppViewContainer"] h4,
+[data-testid="stAppViewContainer"] p {
+    color: #0F172A !important;
+}
+
+[data-testid="stAppViewContainer"] span {
+    color: inherit;
+}
+
+/* Hardcoded inline text overrides */
+.dataset-upload-card-new,
+.dataset-upload-card-new *,
+.supported-formats-card-new,
+.supported-formats-card-new * {
+    color: #1E293B !important;
+}
+
+.dataset-upload-card-new,
+.supported-formats-card-new {
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+    border-color: #CBD5E1 !important;
+}
+
+/* Sidebar Explicit Navigation Icons/Text */
+[data-testid="stSidebar"] [data-testid="stPageLink-LinkLabel"],
+[data-testid="stSidebar"] [data-testid="stIconMaterial"] {
+    color: #475569 !important;
+}
+
+[data-testid="stSidebar"] a[data-testid="stPageLink-Link"]:hover [data-testid="stPageLink-LinkLabel"],
+[data-testid="stSidebar"] a[data-testid="stPageLink-Link"]:hover [data-testid="stIconMaterial"] {
+    color: #0F172A !important;
+}
+
+/* Markdown text blocks inside general markdown elements */
+.stMarkdown p,
+.stMarkdown span {
+    color: #334155 !important;
+}
+
+/* Table Headers & Cells */
+.card-header-row span,
+[data-testid="stAppViewContainer"] div[style*="color:#FFF"],
+[data-testid="stAppViewContainer"] div[style*="color: #FFF"],
+[data-testid="stAppViewContainer"] div[style*="color:#9CA3AF"] {
+    color: #475569 !important;
+}
+
+/* Global Button Overrides for Light Theme (Bulletproof wrapper) */
+[data-testid="stAppViewContainer"] button:not([kind="primary"]):not([data-testid*="primary"]):not([aria-label*="fullscreen"]),
+div.stButton>button,
+div[data-testid="stButton"] button,
+button[data-testid="baseButton-secondary"],
+button[data-testid="stBaseButton-secondary"],
+button[kind="secondary"] {
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+    background-image: none !important;
+    color: #475569 !important;
+    border: 1px solid #CBD5E1 !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+    border-radius: 8px !important;
+}
+
+[data-testid="stAppViewContainer"] button:not([kind="primary"]):not([data-testid*="primary"]):not([aria-label*="fullscreen"]):hover,
+div.stButton>button:hover,
+div[data-testid="stButton"] button:hover,
+button[data-testid="baseButton-secondary"]:hover,
+button[data-testid="stBaseButton-secondary"]:hover,
+button[kind="secondary"]:hover {
+    background: #F8FAFC !important;
+    background-color: #F8FAFC !important;
+    border-color: #94A3B8 !important;
+    color: #0F172A !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* --- BULLETPROOF LIGHT THEME CONTAINER OVERRIDES --- */
+.stMarkdown div.pbi-selector,
+.stMarkdown div.copilot-item,
+.stMarkdown div.dataset-upload-card-new,
+.stMarkdown div.supported-formats-card-new,
+.stMarkdown div.fabric-insight-card,
+.stMarkdown div.enterprise-card,
+div[data-testid="stVerticalBlockBorderWrapper"],
+.enterprise-card {
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+    background-image: none !important;
+    border: 1px solid #CBD5E1 !important;
+}
+
+/* Force dark text for all containers */
+.pbi-selector *,
+.timeline-container *,
+.copilot-item *,
+.dataset-upload-card-new *,
+.supported-formats-card-new *,
+.timeline-item *,
+.fabric-insight-card *,
+.fabric-card-body *,
+.metric-card *,
+.feature-card *,
+.insight-card *,
+.desc-card *,
+.info-card *,
+.recommendation-card *,
+.enterprise-card * {
+    color: #1E293B !important;
+}
+
+/* Defeat specific inline color strings */
+[style*="color:#F8FAFC"],
+[style*="color: #F8FAFC"],
+[style*="color:#FFF"],
+[style*="color: #FFF"],
+[style*="color:#FFFFFF"],
+[style*="color: #FFFFFF"],
+[style*="color:#C084FC"],
+[style*="color: #C084FC"],
+[style*="color:#E2E8F0"],
+[style*="color: #E2E8F0"],
+[style*="color:#e2e8f0"],
+[style*="color: #e2e8f0"],
+[style*="color:#A1A1AA"],
+[style*="color: #A1A1AA"],
+[style*="color:#9CA3AF"],
+[style*="color: #9CA3AF"],
+[style*="color:#94A3B8"],
+[style*="color: #94A3B8"] {
+    color: #334155 !important;
+}
+
+/* Pipeline timeline nodes in light mode */
+.timeline-node {
+    background: #FFFFFF !important;
+    border-color: #94A3B8 !important;
+}
+
+.timeline-node-active {
+    background: #3B82F6 !important;
+    border-color: #2563EB !important;
+    color: #FFFFFF !important;
+}
+
+.timeline-line-active {
+    background: #3B82F6 !important;
+}
+
+/* Helper class override for Light Mode high-contrast text */
+.text-contrast-muted {
+    color: #334155 !important;
+}
+
+/* Hardcoded inline text color overrides in Light Mode */
+[style*="color:#E5E7EB"],
+[style*="color: #E5E7EB"],
+[style*="color:#e5e7eb"],
+[style*="color: #e5e7eb"],
+[style*="color:#9CA3AF"],
+[style*="color: #9CA3AF"],
+[style*="color:#9ca3af"],
+[style*="color: #9ca3af"],
+[style*="color:white"],
+[style*="color: white"],
+[style*="color:#F8FAFC"],
+[style*="color: #F8FAFC"],
+[style*="color:#f8fafc"],
+[style*="color: #f8fafc"] {
+    color: #334155 !important;
+}
+
+/* Hardcoded container backgrounds override in Light Mode */
+[style*="background: rgba(30, 41, 59,"],
+[style*="background:rgba(30,41,59,"],
+[style*="background: rgba(17, 24, 39,"],
+[style*="background:rgba(17,24,39,"] {
+    background: #F1F5F9 !important;
+    background-color: #F1F5F9 !important;
+}
+
+/* Light purple #A78BFA override to brand purple #7C3AED in Light Mode */
+[style*="color:#A78BFA"],
+[style*="color: #A78BFA"],
+[style*="color:#a78bfa"],
+[style*="color: #a78bfa"] {
+    color: #7C3AED !important;
+}
+
+/* Global page header .fabric-header styling in Light Mode */
+.fabric-header {
+    background: #FFFFFF !important;
+    border: 1px solid #E2E8F0 !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.fabric-header * {
+    color: #334155 !important;
+}
+
+.fabric-header h1 {
+    color: #0F172A !important;
+}
+
+.fabric-header p {
+    color: #475569 !important;
+}
+
+.fabric-header span {
+    color: #7C3AED !important;
+}
+
+/* Override kpi-card backgrounds in Light Mode if they are dark */
+.kpi-card {
+    background: #FFFFFF !important;
+}
+
+/* Hardcoded inline text color overrides in Light Mode (RGB variants for Chromium serialization) */
+[style*="color: rgb(226, 232, 240)"],
+[style*="color: rgb(148, 163, 184)"],
+[style*="color: rgb(229, 231, 235)"],
+[style*="color: rgb(156, 163, 175)"],
+[style*="color: rgb(255, 255, 255)"],
+[style*="color: rgb(248, 250, 252)"] {
+    color: #334155 !important;
+}
+
+/* AI Copilot (Page 7) and Global Inline Style Overrides */
+.stApp h1,
+.stApp h2,
+.stApp h3,
+.stApp .stMarkdown h1,
+.stApp .stMarkdown h2,
+.stApp .stMarkdown h3 {
+    color: #0F172A !important;
+}
+
+.stApp p,
+.stApp span,
+.stApp .stMarkdown p {
+    color: #334155 !important;
+}
+
+.stApp strong,
+.stApp b {
+    color: #0F172A !important;
+}
+
+/* Page 7 Copilot Card Nested Class overrides */
+.fabric-card-title {
+    color: #0F172A !important;
+}
+
+.fabric-card-desc {
+    color: #475569 !important;
+}
+
+.fabric-card-body {
+    color: #334155 !important;
+}
+
+.fabric-ai-brand {
+    color: #7C3AED !important;
+}
+
+/* Streamlit Native Metric Overrides in Light Mode */
+[data-testid="stMetricValue"],
+[data-testid="stMetricValue"] * {
+    color: #0F172A !important;
+}
+
+[data-testid="stMetricLabel"],
+[data-testid="stMetricLabel"] * {
+    color: #475569 !important;
+}
+
+/* Plotly Modebar Styling Overrides in Light Mode */
+.modebar,
+.js-plotly-plot .plotly .modebar {
+    background-color: transparent !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.modebar-group,
+.js-plotly-plot .plotly .modebar-group {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 20px !important;
+    padding: 2px 8px !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03) !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+}
+
+.modebar-btn,
+.js-plotly-plot .plotly .modebar-btn {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 50% !important;
+    width: 28px !important;
+    height: 28px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.2s ease !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+.modebar-btn svg,
+.js-plotly-plot .plotly .modebar-btn svg {
+    width: 16px !important;
+    height: 16px !important;
+}
+
+.modebar-btn svg path,
+.js-plotly-plot .plotly .modebar-btn svg path {
+    fill: #64748B !important;
+    transition: fill 0.2s ease !important;
+}
+
+.modebar-btn:hover,
+.js-plotly-plot .plotly .modebar-btn:hover {
+    background-color: #F1F5F9 !important;
+    background: #F1F5F9 !important;
+}
+
+.modebar-btn:hover svg path,
+.js-plotly-plot .plotly .modebar-btn:hover svg path {
+    fill: #7C3AED !important;
+}
+
+.modebar-btn.active svg path,
+.js-plotly-plot .plotly .modebar-btn.active svg path {
+    fill: #7C3AED !important;
+}
+
+/* Plotly Chart Texts in Light Mode */
+.js-plotly-plot .plotly .xtick text,
+.js-plotly-plot .plotly .ytick text,
+.js-plotly-plot .plotly .g-gtitle text,
+.js-plotly-plot .plotly .g-xtitle text,
+.js-plotly-plot .plotly .g-ytitle text,
+.js-plotly-plot .plotly .legendtext {
+    fill: #334155 !important;
+    color: #334155 !important;
+}
+
+/* AI Copilot Page 7 Search Bar Overrides in Light Mode */
+.stApp div[data-testid="stForm"]:has(#custom-search-container) div[data-testid="stHorizontalBlock"] {
+    background: #FFFFFF !important;
+    border-color: #E2E8F0 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), inset 0 1px 3px rgba(0, 0, 0, 0.01) !important;
+}
+
+.stApp div[data-testid="stForm"]:has(#custom-search-container) div[data-testid="stHorizontalBlock"]:hover,
+.stApp div[data-testid="stForm"]:has(#custom-search-container) div[data-testid="stHorizontalBlock"]:focus-within {
+    border-color: #7C3AED !important;
+    background: #FFFFFF !important;
+    box-shadow: 0 0 0 3px rgba(124, 92, 246, 0.15) !important;
+}
+
+.stApp div[data-testid="stForm"]:has(#custom-search-container) div[data-testid="stTextInput"] input {
+    color: #0F172A !important;
+}
+
+.stApp div[data-testid="stForm"]:has(#custom-search-container) div[data-testid="stTextInput"] input::placeholder {
+    color: #94A3B8 !important;
+}
+
+/* AI Copilot Page 7 Suggestion Chips Overrides in Light Mode */
+.stApp div[data-testid="stVerticalBlock"]:has(#chip-container-marker) button {
+    background: #FFFFFF !important;
+    border-color: #E2E8F0 !important;
+    color: #475569 !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.stApp div[data-testid="stVerticalBlock"]:has(#chip-container-marker) button p {
+    color: #475569 !important;
+}
+
+.stApp div[data-testid="stVerticalBlock"]:has(#chip-container-marker) button:hover {
+    background: #F1F5F9 !important;
+    border-color: #7C3AED !important;
+    color: #7C3AED !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+}
+
+.stApp div[data-testid="stVerticalBlock"]:has(#chip-container-marker) button:hover p {
+    color: #7C3AED !important;
+}
+
+.stApp div[data-testid="stVerticalBlock"]:has(#chip-container-marker) button:active {
+    transform: scale(0.97) !important;
+}
+
+/* Streamlit Toggle / Switch overrides in Light Mode */
+/* Visible gray track when off */
+[data-testid="stSidebar"] [data-testid="stToggle"] [data-baseweb="checkbox"]>div:first-child,
+.st-key-sidebar_theme_toggle [data-baseweb="checkbox"]>div:first-child {
+    background: #CBD5E1 !important;
+    background-color: #CBD5E1 !important;
+}
+
+/* Brand purple track when on */
+[data-testid="stSidebar"] [data-testid="stToggle"] input:checked+div,
+.st-key-sidebar_theme_toggle input:checked+div {
+    background: #7C3AED !important;
+    background-color: #7C3AED !important;
+}
+
+/* Ensure the toggle knob remains white and distinct */
+[data-testid="stSidebar"] [data-testid="stToggle"] [data-baseweb="checkbox"]>div:first-child>div,
+.st-key-sidebar_theme_toggle [data-baseweb="checkbox"]>div:first-child>div {
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Remove any potential selection highlights/borders/backgrounds around toggle container & label */
+.stApp [data-testid="stToggle"],
+.stApp [data-testid="stCheckbox"],
+[data-testid="stSidebar"] [data-testid="stToggle"],
+[data-testid="stSidebar"] [data-testid="stCheckbox"],
+.st-key-sidebar_theme_toggle,
+.st-key-sidebar_theme_toggle label,
+[data-testid="stSidebar"] [data-testid="stCheckbox"] label,
+[data-testid="stSidebar"] [data-testid="stToggle"] label {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    background-color: transparent !important;
+}

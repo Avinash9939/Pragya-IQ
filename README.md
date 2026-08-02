@@ -9,7 +9,7 @@
 [![Live App](https://img.shields.io/badge/🚀%20LIVE%20APP-pragya--iq.streamlit.app-2563EB?style=for-the-badge)](https://pragya-iq.streamlit.app)
 [![GitHub](https://img.shields.io/badge/GitHub-AvinashVerma-black?style=for-the-badge&logo=github)](https://github.com/Avinash9939)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Avinash%20Verma-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/avinashverma108/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-AvinashVerma-C084FC?style=for-the-badge&logo=vercel)](https://#)
+[![Portfolio](https://img.shields.io/badge/Portfolio-AvinashVerma-C084FC?style=for-the-badge&logo=vercel)](https://avinash9939-bzbqqhpyclre4ch66wujwh.streamlit.app)
 [![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail)](mailto:expert@example.com)
 
 <br/>
@@ -737,7 +737,7 @@ Building scalable, AI-powered Business Intelligence architectures to solve compl
 <a href="https://github.com/Avinash9939"><img src="https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white" alt="GitHub"></a>
 <a href="https://www.linkedin.com/in/avinashverma108/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2.svg?style=for-the-badge&logo=LinkedIn&logoColor=white" alt="LinkedIn"></a>
 <a href="#"><img src="https://img.shields.io/badge/Portfolio-2563EB.svg?style=for-the-badge&logo=Vercel&logoColor=white" alt="Portfolio"></a>
-<a href="mailto:expert@example.com"><img src="https://img.shields.io/badge/Email-EA4335.svg?style=for-the-badge&logo=Gmail&logoColor=white" alt="Email"></a>
+<a href="mailto:akkumar1082004@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335.svg?style=for-the-badge&logo=Gmail&logoColor=white" alt="Email"></a>
 <a href="#"><img src="https://img.shields.io/badge/Live_Demo-000000.svg?style=for-the-badge&logo=Vercel&logoColor=white" alt="Live Demo"></a>
 
 <br><br>

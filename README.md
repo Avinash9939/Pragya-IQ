@@ -738,7 +738,7 @@ Building scalable, AI-powered Business Intelligence architectures to solve compl
 <a href="https://www.linkedin.com/in/avinashverma108/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2.svg?style=for-the-badge&logo=LinkedIn&logoColor=white" alt="LinkedIn"></a>
 <a href="https://avinash9939-bzbqqhpyclre4ch66wujwh.streamlit.app"><img src="https://img.shields.io/badge/Portfolio-2563EB.svg?style=for-the-badge&logo=Vercel&logoColor=white" alt="Portfolio"></a>
 <a href="mailto:akkumar1082004@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335.svg?style=for-the-badge&logo=Gmail&logoColor=white" alt="Email"></a>
-<a href="https://pragya-iq.streamlit.app"><img src="https://img.shields.io/badge/Live_Demo-000000.svg?style=for-the-badge&logo=Vercel&logoColor=white" alt="Live Demo"></a>
+[![Live App](https://img.shields.io/badge/🚀%20LIVE%20APP-pragya--iq.streamlit.app-2563EB?style=for-the-badge)](https://pragya-iq.streamlit.app)
 
 <br><br>
 ---

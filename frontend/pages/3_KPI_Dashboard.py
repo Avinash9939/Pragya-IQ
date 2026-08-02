@@ -727,8 +727,7 @@ def _map_chart(df, state_col, metric_col):
                     hovertemplate="<b>%{hovertext}</b><br>" + metric_col +
                                    ": %{customdata[0]}<br>Share: %{customdata[1]}<extra></extra>",
                     customdata=np.stack((generic_matches["_fmt"], generic_matches["_pct"]), axis=-1),
-                    marker=dict(line=dict(width=1, color="rgba(255,255,255,0.7)")),
-                    sizemin=10, sizemode="area"
+                    marker=dict(line=dict(width=1, color="rgba(255,255,255,0.7)"), sizemin=10, sizemode="area")
                 )
                 
                 fig.add_trace(go.Scattergeo(

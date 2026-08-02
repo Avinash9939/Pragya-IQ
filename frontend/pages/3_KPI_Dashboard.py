@@ -666,13 +666,113 @@ def _map_chart(df, state_col, metric_col):
                 fig.update_geos(fitbounds="locations", visible=False)
                 fig.update_layout(**_chart_layout(150), dragmode=False,
                                   coloraxis_showscale=False,
+        # Generic Regions Bubble Map Fallback (For generic regions like "West", "East", "Central")
+        if len(g) > 0:
+            region_coords = {
+                "WEST": (40.0, -119.0),
+                "EAST": (40.0, -75.0),
+                "SOUTH": (33.0, -86.0),
+                "CENTRAL": (39.0, -98.0),
+                "NORTH": (45.0, -96.0),
+                "MIDWEST": (42.0, -92.0),
+                "NORTHEAST": (43.0, -74.0),
+                "SOUTHEAST": (33.0, -83.0),
+                "SOUTHWEST": (34.0, -106.0),
+                "NORTHWEST": (45.0, -114.0),
+                "EMEA": (45.0, 15.0),
+                "APAC": (15.0, 105.0),
+                "LATAM": (-10.0, -65.0),
+                "AMERICAS": (40.0, -95.0),
+                "EUROPE": (50.0, 10.0),
+                "ASIA": (40.0, 95.0),
+                "AFRICA": (0.0, 20.0),
+                "NORTH AMERICA": (45.0, -100.0),
+                "SOUTH AMERICA": (-15.0, -60.0),
+                "AUSTRALIA": (-25.0, 135.0),
+                "OCEANIA": (-20.0, 140.0),
+            }
+            
+            g_generic = g.copy()
+            g_generic["_lat"] = g_generic[state_col].apply(lambda x: region_coords.get(x, (None, None))[0])
+            g_generic["_lon"] = g_generic[state_col].apply(lambda x: region_coords.get(x, (None, None))[1])
+            
+            generic_matches = g_generic.dropna(subset=["_lat", "_lon"]).copy()
+            
+            if len(generic_matches) > 0:
+                is_us_scoped = any(x in generic_matches[state_col].values for x in ["WEST", "EAST", "SOUTH", "CENTRAL", "MIDWEST", "NORTHEAST"])
+                scope = "usa" if is_us_scoped else "world"
+                
+                total = generic_matches[metric_col].sum()
+                total_abs = max(1e-9, abs(total))
+                generic_matches["_pct"] = (generic_matches[metric_col] / total_abs * 100).apply(lambda x: f"{x:.1f}%")
+                generic_matches["_fmt"] = generic_matches[metric_col].apply(format_currency if any(
+                    x in metric_col.lower() for x in ["revenue","sales","amount","profit","cost","salary"]
+                ) else format_number)
+                
+                fig = px.scatter_geo(
+                    generic_matches,
+                    lat="_lat",
+                    lon="_lon",
+                    size=metric_col,
+                    color=metric_col,
+                    hover_name=state_col,
+                    scope=scope,
+                    color_continuous_scale=["#3B82F6", "#8B5CF6", "#EC4899", "#10B981", "#F59E0B"]
+                )
+                fig.update_traces(
+                    hovertemplate="<b>%{hovertext}</b><br>" + metric_col +
+                                   ": %{customdata[0]}<br>Share: %{customdata[1]}<extra></extra>",
+                    customdata=np.stack((generic_matches["_fmt"], generic_matches["_pct"]), axis=-1),
+                    marker=dict(line=dict(width=1, color="rgba(255,255,255,0.7)")),
+                    sizemin=10, sizemode="area"
+                )
+                
+                fig.add_trace(go.Scattergeo(
+                    lat=generic_matches["_lat"], lon=generic_matches["_lon"],
+                    text=generic_matches[state_col].str.title(), mode="text",
+                    textfont=dict(color="white", size=10, family="Inter"),
+                    textposition="top center", hoverinfo="skip",
+                    showlegend=False
+                ))
+                
+                fig.update_layout(**_chart_layout(150), dragmode=False,
+                                  coloraxis_showscale=False,
                                   geo=dict(bgcolor="rgba(0,0,0,0)",
-                                           subunitcolor="rgba(255,255,255,0.08)"))
+                                           lakecolor="rgba(0,0,0,0)",
+                                           landcolor="rgba(255,255,255,0.02)",
+                                           subunitcolor="rgba(255,255,255,0.08)",
+                                           showlakes=True))
                 return fig
                 
-        # If no US or India matches found, but we have data, fallback to a standard horizontal bar chart
-        if len(g) > 0:
-            return _hbar_chart(df, metric_col, state_col)
+            # If not generic regions, assume World Countries and render standard choropleth
+            total = g[metric_col].sum()
+            total_abs = max(1e-9, abs(total))
+            g["_pct"] = (g[metric_col] / total_abs * 100).apply(lambda x: f"{x:.1f}%")
+            g["_fmt"] = g[metric_col].apply(format_currency if any(
+                x in metric_col.lower() for x in ["revenue","sales","amount","profit","cost","salary"]
+            ) else format_number)
+            
+            fig = px.choropleth(
+                g,
+                locations=state_col,
+                locationmode="country names",
+                color=metric_col,
+                color_continuous_scale=["#3B82F6", "#8B5CF6", "#EC4899", "#10B981", "#F59E0B"]
+            )
+            fig.update_traces(
+                hovertemplate="<b>%{location}</b><br>" + metric_col +
+                               ": %{customdata[0]}<br>Share: %{customdata[1]}<extra></extra>",
+                customdata=np.stack((g["_fmt"], g["_pct"]), axis=-1),
+                marker_line_color="rgba(255,255,255,0.15)", marker_line_width=0.8
+            )
+            fig.update_layout(**_chart_layout(150), dragmode=False,
+                              coloraxis_showscale=False,
+                              geo=dict(bgcolor="rgba(0,0,0,0)",
+                                       lakecolor="rgba(0,0,0,0)",
+                                       landcolor="rgba(255,255,255,0.02)",
+                                       subunitcolor="rgba(255,255,255,0.08)",
+                                       showlakes=True))
+            return fig
             
         return None
     except Exception:

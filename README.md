@@ -736,9 +736,9 @@ Building scalable, AI-powered Business Intelligence architectures to solve compl
 
 <a href="https://github.com/Avinash9939"><img src="https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white" alt="GitHub"></a>
 <a href="https://www.linkedin.com/in/avinashverma108/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2.svg?style=for-the-badge&logo=LinkedIn&logoColor=white" alt="LinkedIn"></a>
-<a href="#"><img src="https://img.shields.io/badge/Portfolio-2563EB.svg?style=for-the-badge&logo=Vercel&logoColor=white" alt="Portfolio"></a>
+<a href="https://avinash9939-bzbqqhpyclre4ch66wujwh.streamlit.app"><img src="https://img.shields.io/badge/Portfolio-2563EB.svg?style=for-the-badge&logo=Vercel&logoColor=white" alt="Portfolio"></a>
 <a href="mailto:akkumar1082004@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335.svg?style=for-the-badge&logo=Gmail&logoColor=white" alt="Email"></a>
-<a href="#"><img src="https://img.shields.io/badge/Live_Demo-000000.svg?style=for-the-badge&logo=Vercel&logoColor=white" alt="Live Demo"></a>
+<a href="https://avinash9939-bzbqqhpyclre4ch66wujwh.streamlit.app"><img src="https://img.shields.io/badge/Live_Demo-000000.svg?style=for-the-badge&logo=Vercel&logoColor=white" alt="Live Demo"></a>
 
 <br><br>
 ---

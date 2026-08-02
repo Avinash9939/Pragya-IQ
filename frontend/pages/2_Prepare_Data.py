@@ -1397,7 +1397,7 @@ body {{ background:transparent; color:{text_color}; }}
     const clean={{}};
     for(let k in cur){{if(cur[k]&&cur[k]!=="(None)")clean[k]=cur[k];}}
     showSt("⏳ Saving…","success");
-    fetch(`${{apiB}}/api/v1/datasets/${{dsId}}/mapping`,{{
+    fetch(`${{apiB}}/datasets/${{dsId}}/mapping`,{{
       method:"PUT",
       headers:{{"Content-Type":"application/json","Authorization":`Bearer ${{tok}}`}},
       body:JSON.stringify({{mapping:clean}})

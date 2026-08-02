@@ -13,7 +13,8 @@ class Settings(BaseSettings):
     secret_key: str = "replace_me_with_a_secure_random_key_in_production"
     access_token_expire_minutes: int = 60
     database_url: str = "postgresql://postgres:postgres@localhost:5432/bi_platform"
-    cors_origins: str = "http://localhost:3000,http://127.0.0.1:3000"
+    cors_origins: str = "*"
+
     max_upload_size_mb: int = 50
     churn_config: dict = {"recency_threshold_days": 90}
     gemini_api_key: str = ""

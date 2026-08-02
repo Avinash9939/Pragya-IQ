@@ -613,7 +613,7 @@ def _map_chart(df, state_col, metric_col):
             return fig
 
         elif len(india_matches) > 0:
-            geojson_path = "c:/Users/akkum/OneDrive/Desktop/Project/backend/storage/india_states.geojson"
+            geojson_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "backend", "storage", "india_states.geojson"))
             if not os.path.exists(geojson_path):
                 import urllib.request
                 try:
@@ -669,7 +669,11 @@ def _map_chart(df, state_col, metric_col):
                                   geo=dict(bgcolor="rgba(0,0,0,0)",
                                            subunitcolor="rgba(255,255,255,0.08)"))
                 return fig
-        
+                
+        # If no US or India matches found, but we have data, fallback to a standard horizontal bar chart
+        if len(g) > 0:
+            return _hbar_chart(df, metric_col, state_col)
+            
         return None
     except Exception:
         return None

@@ -395,22 +395,9 @@ if df_raw is not None:
     rows_count = len(df_raw)
     cols_count = len(df_raw.columns)
     
-    # Calculate file size
+    # Calculate file size using memory approximation
     try:
-        user_id = st.session_state["user"]["id"]
-        folder = f"../backend/storage/{user_id}"
-        # Check both local workspace storage and C:\Project backend storage location
-        if not os.path.exists(folder) or not any(f.startswith(f"{active_dataset_id}_") for f in os.listdir(folder) if os.path.exists(folder)):
-            alt_folder = f"C:/Project/backend/storage/{user_id}"
-            if os.path.exists(alt_folder):
-                folder = alt_folder
-
-        matches = [f for f in os.listdir(folder) if f.startswith(f"{active_dataset_id}_")]
-        selected_file = matches[0] if matches else ""
-        for suffix in ["_cleaned", "_features"]:
-            for m in matches:
-                if suffix in m: selected_file = m
-        fsize = os.path.getsize(os.path.join(folder, selected_file))
+        fsize = int(df_raw.memory_usage(deep=True).sum())
         if fsize > 1024 * 1024:
             size_str = f"{fsize / (1024 * 1024):.2f} MB"
         else:

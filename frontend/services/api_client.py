@@ -161,6 +161,17 @@ def get_dataset(dataset_id: int, force_refresh: bool = False) -> dict:
     return data
 
 
+def download_dataset_file(dataset_id: int, file_type: str = "raw") -> bytes:
+    """
+    Downloads the physical dataset file via API.
+    file_type: 'raw', 'cleaned', or 'features'
+    """
+    params = {"file_type": file_type}
+    response = _request("GET", f"datasets/{dataset_id}/download", params=params, timeout=120.0)
+    return response.content
+
+
+
 def clean_dataset(dataset_id: int) -> dict:
     """
     Triggers automated cleaning processes on the target dataset.

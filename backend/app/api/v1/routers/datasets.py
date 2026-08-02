@@ -204,6 +204,42 @@ def get_dataset(
         columns=columns
     )
 
+@router.get("/{id}/download", status_code=status.HTTP_200_OK)
+def download_dataset(
+    id: int,
+    file_type: str = "raw",
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    from fastapi.responses import FileResponse
+    import os
+    repo = SQLAlchemyDatasetRepository(db)
+    dataset = repo.get_by_id(id)
+    if not dataset or dataset.user_id != current_user.id:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Dataset not found or access denied")
+    storage = LocalStorage()
+    base_file_path = storage.get_path(dataset.storage_path)
+    file_path = base_file_path
+    if file_type == "features":
+        for ext in [".csv", ".xlsx"]:
+            test_path = base_file_path.replace(ext, f"_cleaned_features{ext}")
+            if os.path.exists(test_path):
+                file_path = test_path
+                break
+    elif file_type == "cleaned":
+        for ext in [".csv", ".xlsx"]:
+            test_path = base_file_path.replace(ext, f"_cleaned{ext}")
+            if os.path.exists(test_path):
+                file_path = test_path
+                break
+    if not os.path.exists(file_path):
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="File not found on server")
+    filename = os.path.basename(file_path)
+    # Detect mime
+    media_type = "text/csv" if filename.endswith(".csv") else "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    return FileResponse(path=file_path, filename=filename, media_type=media_type)
+
+
 @router.post("/{id}/clean", status_code=status.HTTP_200_OK)
 def clean_dataset(
     id: int,

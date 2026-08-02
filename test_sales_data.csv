@@ -1,0 +1,206 @@
+Order Date,Order ID,Customer ID,Customer Name,Product ID,Product Name,Category,Region,Sales,Quantity,Profit,Discount
+2025-01-01,ORD-2025-0001,CUST-002,Bob Jones,PROD-785,Orbit Laptop,Technology,East,3420.0,3,571.01,0.05
+2025-01-02,ORD-2025-0002,CUST-009,Ian Malcolm,PROD-053,Nova Tablet,Technology,East,2550.0,5,279.31,0.15
+2025-01-04,ORD-2025-0003,CUST-004,Diana Prince,PROD-040,Vertex Monitor,Technology,West,1200.0,5,129.55,0.2
+2025-01-06,ORD-2025-0004,CUST-009,Ian Malcolm,PROD-474,Cedar Bookcase,Furniture,East,680.0,2,188.21,0.15
+2025-01-08,ORD-2025-0005,CUST-003,Charlie Brown,PROD-474,Cedar Bookcase,Furniture,Central,1080.0,3,158.38,0.1
+2025-01-10,ORD-2025-0006,CUST-002,Bob Jones,PROD-053,Nova Tablet,Technology,Central,2400.0,4,498.47,0.0
+2025-01-11,ORD-2025-0007,CUST-010,Julia Roberts,PROD-205,Harbor Chair,Furniture,South,212.5,1,55.43,0.15
+2025-01-13,ORD-2025-0008,CUST-002,Bob Jones,PROD-250,Lumen Paper,Office Supplies,Central,36.0,3,13.16,0.2
+2025-01-15,ORD-2025-0009,CUST-010,Julia Roberts,PROD-040,Vertex Monitor,Technology,Central,300.0,1,89.51,0.0
+2025-01-17,ORD-2025-0010,CUST-002,Bob Jones,PROD-040,Vertex Monitor,Technology,Central,255.0,1,46.76,0.15
+2025-01-19,ORD-2025-0011,CUST-003,Charlie Brown,PROD-661,Summit Desk,Furniture,East,1425.0,3,429.0,0.05
+2025-01-20,ORD-2025-0012,CUST-010,Julia Roberts,PROD-517,Pulse Headphones,Technology,South,712.5,5,106.18,0.05
+2025-01-22,ORD-2025-0013,CUST-005,Evan Wright,PROD-250,Lumen Paper,Office Supplies,East,27.0,2,9.53,0.1
+2025-01-24,ORD-2025-0014,CUST-004,Diana Prince,PROD-785,Orbit Laptop,Technology,West,3060.0,3,551.79,0.15
+2025-01-26,ORD-2025-0015,CUST-010,Julia Roberts,PROD-661,Summit Desk,Furniture,South,850.0,2,185.89,0.15
+2025-01-28,ORD-2025-0016,CUST-003,Charlie Brown,PROD-205,Harbor Chair,,Central,475.0,2,153.66,0.05
+2025-01-29,ORD-2025-0017,CUST-010,Julia Roberts,PROD-474,Cedar Bookcase,Furniture,West,1700.0,5,354.62,0.15
+2025-01-31,ORD-2025-0018,CUST-009,Ian Malcolm,PROD-071,Atlas Binder,Office Supplies,West,10.0,1,3.58,0.0
+2025-02-02,ORD-2025-0019,CUST-003,Charlie Brown,PROD-474,Cedar Bookcase,Furniture,South,2000.0,5,430.86,0.0
+2025-02-04,ORD-2025-0020,CUST-009,Ian Malcolm,PROD-205,Harbor Chair,Furniture,East,1250.0,5,380.11,0.0
+2025-02-06,ORD-2025-0021,CUST-009,Ian Malcolm,PROD-205,Harbor Chair,Furniture,West,750.0,3,141.04,0.0
+2025-02-07,ORD-2025-0022,CUST-008,Hannah Abbott,PROD-785,Orbit Laptop,Technology,East,2880.0,3,946.34,0.2
+2025-02-09,ORD-2025-0023,CUST-005,Evan Wright,PROD-250,Lumen Paper,Office Supplies,West,71.25,5,10.39,0.05
+2025-02-11,ORD-2025-0024,CUST-009,Ian Malcolm,PROD-250,Lumen Paper,Office Supplies,East,12.0,1,2.37,0.2
+2025-02-13,ORD-2025-0025,CUST-002,Bob Jones,PROD-661,Summit Desk,Furniture,East,1425.0,3,167.26,0.05
+2025-02-15,ORD-2025-0026,CUST-002,Bob Jones,PROD-071,Atlas Binder,Office Supplies,West,,1,2.64,0.2
+2025-02-16,ORD-2025-0027,CUST-008,Hannah Abbott,PROD-250,Lumen Paper,Office Supplies,South,27.0,2,6.97,0.1
+2025-02-18,ORD-2025-0028,CUST-004,Diana Prince,PROD-250,Lumen Paper,Office Supplies,Central,27.0,2,5.93,0.1
+2025-02-20,ORD-2025-0029,CUST-008,Hannah Abbott,PROD-250,Lumen Paper,Office Supplies,East,60.0,4,10.46,0.0
+2025-02-22,ORD-2025-0030,CUST-006,Fiona Gallagher,PROD-785,Orbit Laptop,Technology,West,4800.0,5,811.37,0.2
+2025-02-24,ORD-2025-0031,CUST-001,Alice Smith,PROD-053,Nova Tablet,Technology,East,570.0,1,68.53,0.05
+2025-02-25,ORD-2025-0032,CUST-006,Fiona Gallagher,PROD-053,Nova Tablet,Technology,South,2850.0,5,523.1,0.05
+2025-02-27,ORD-2025-0033,CUST-004,Diana Prince,PROD-250,Lumen Paper,Office Supplies,West,24.0,2,6.55,0.2
+2025-03-01,ORD-2025-0034,CUST-008,Hannah Abbott,PROD-474,Cedar Bookcase,Furniture,South,800.0,2,103.26,0.0
+2025-03-03,ORD-2025-0035,CUST-006,Fiona Gallagher,PROD-474,Cedar Bookcase,Furniture,East,1360.0,4,488.45,0.15
+2025-03-05,ORD-2025-0036,CUST-002,Bob Jones,PROD-785,Orbit Laptop,Technology,East,4320.0,,1469.57,0.1
+2025-03-06,ORD-2025-0037,CUST-004,Diana Prince,PROD-040,Vertex Monitor,Technology,South,480.0,2,112.6,0.2
+2025-03-08,ORD-2025-0038,CUST-003,Charlie Brown,PROD-205,Harbor Chair,Furniture,East,950.0,4,344.23,0.05
+2025-03-10,ORD-2025-0039,CUST-008,Hannah Abbott,PROD-250,Lumen Paper,Office Supplies,East,15.0,1,4.43,0.0
+2025-03-12,ORD-2025-0040,CUST-002,Bob Jones,PROD-040,Vertex Monitor,Technology,West,510.0,2,125.3,0.15
+2025-03-14,ORD-2025-0041,CUST-007,George Clark,PROD-785,Orbit Laptop,Technology,South,2040.0,2,205.32,0.15
+2025-03-15,ORD-2025-0042,CUST-005,Evan Wright,PROD-071,Atlas Binder,Office Supplies,South,25.5,3,7.88,0.15
+2025-03-17,ORD-2025-0043,CUST-003,Charlie Brown,PROD-040,Vertex Monitor,Technology,East,855.0,3,333.97,0.05
+2025-03-19,ORD-2025-0044,CUST-006,Fiona Gallagher,PROD-785,Orbit Laptop,Technology,West,960.0,1,233.32,0.2
+2025-03-21,ORD-2025-0045,CUST-001,Alice Smith,PROD-250,Lumen Paper,Office Supplies,East,14.25,1,1.72,0.05
+2025-03-23,ORD-2025-0046,CUST-004,Diana Prince,PROD-474,Cedar Bookcase,,East,320.0,1,55.64,0.2
+2025-03-24,ORD-2025-0047,CUST-010,Julia Roberts,PROD-053,Nova Tablet,Technology,Central,1920.0,4,517.57,0.2
+2025-03-26,ORD-2025-0048,CUST-005,Evan Wright,PROD-040,Vertex Monitor,Technology,West,855.0,3,153.63,0.05
+2025-03-28,ORD-2025-0049,CUST-005,Evan Wright,PROD-071,Atlas Binder,Office Supplies,East,30.0,3,3.08,0.0
+2025-03-30,ORD-2025-0050,CUST-002,Bob Jones,PROD-250,Lumen Paper,Office Supplies,Central,24.0,2,4.31,0.2
+2025-04-01,ORD-2025-0051,CUST-002,Bob Jones,PROD-040,Vertex Monitor,Technology,Central,99999.0,3,45000.0,0.1
+2025-04-02,ORD-2025-0052,CUST-010,Julia Roberts,PROD-250,Lumen Paper,Office Supplies,East,12.0,1,2.28,0.2
+2025-04-04,ORD-2025-0053,CUST-003,Charlie Brown,PROD-205,Harbor Chair,Furniture,West,250.0,1,80.68,0.0
+2025-04-06,ORD-2025-0054,CUST-005,Evan Wright,PROD-205,Harbor Chair,Furniture,West,1187.5,5,374.4,0.05
+2025-04-08,ORD-2025-0055,CUST-005,Evan Wright,PROD-250,Lumen Paper,Office Supplies,East,54.0,4,20.07,0.1
+2025-04-10,ORD-2025-0056,CUST-002,Bob Jones,PROD-474,Cedar Bookcase,Furniture,West,1200.0,3,121.28,0.0
+2025-04-11,ORD-2025-0057,CUST-005,Evan Wright,PROD-517,Pulse Headphones,Technology,East,480.0,4,149.62,0.2
+2025-04-13,ORD-2025-0058,CUST-002,Bob Jones,PROD-053,Nova Tablet,Technology,Central,960.0,2,106.38,0.2
+2025-04-15,ORD-2025-0059,CUST-010,Julia Roberts,PROD-250,Lumen Paper,Office Supplies,Central,25.5,2,3.52,0.15
+2025-04-17,ORD-2025-0060,CUST-006,Fiona Gallagher,PROD-785,Orbit Laptop,Technology,East,3420.0,3,1041.8,0.05
+2025-04-19,ORD-2025-0061,CUST-006,Fiona Gallagher,PROD-250,Lumen Paper,Office Supplies,West,48.0,4,15.59,0.2
+2025-04-20,ORD-2025-0062,CUST-003,Charlie Brown,PROD-517,Pulse Headphones,Technology,Central,600.0,4,92.28,0.0
+2025-04-22,ORD-2025-0063,CUST-007,George Clark,PROD-040,Vertex Monitor,Technology,East,855.0,3,287.46,0.05
+2025-04-24,ORD-2025-0064,CUST-007,George Clark,PROD-785,Orbit Laptop,Technology,South,4560.0,4,729.02,0.05
+2025-04-26,ORD-2025-0065,CUST-006,Fiona Gallagher,PROD-205,Harbor Chair,Furniture,West,475.0,2,50.87,0.05
+2025-04-28,ORD-2025-0066,CUST-007,George Clark,PROD-661,Summit Desk,Furniture,Central,1500.0,3,585.1,0.0
+2025-04-29,ORD-2025-0067,CUST-006,Fiona Gallagher,PROD-250,Lumen Paper,Office Supplies,East,48.0,4,9.57,0.2
+2025-05-01,ORD-2025-0068,CUST-002,Bob Jones,PROD-205,Harbor Chair,Furniture,Central,400.0,2,155.5,0.2
+2025-05-03,ORD-2025-0069,CUST-001,Alice Smith,PROD-053,Nova Tablet,Technology,Central,2550.0,5,519.45,0.15
+2025-05-05,ORD-2025-0070,CUST-007,George Clark,PROD-017,Quill Storage,Office Supplies,West,225.0,5,48.5,0.0
+2025-05-07,ORD-2025-0071,CUST-005,Evan Wright,PROD-785,Orbit Laptop,Technology,West,4800.0,4,1228.69,0.0
+2025-05-08,ORD-2025-0072,CUST-006,Fiona Gallagher,PROD-474,Cedar Bookcase,Furniture,East,360.0,1,103.3,0.1
+2025-05-10,ORD-2025-0073,CUST-005,Evan Wright,PROD-250,Lumen Paper,Office Supplies,Central,38.25,3,7.57,0.15
+2025-05-12,ORD-2025-0074,CUST-009,Ian Malcolm,PROD-517,Pulse Headphones,Technology,South,255.0,2,76.37,0.15
+2025-05-14,ORD-2025-0075,CUST-003,Charlie Brown,PROD-017,Quill Storage,Office Supplies,East,202.5,5,44.92,0.1
+2025-05-16,ORD-2025-0076,CUST-005,Evan Wright,PROD-205,Harbor Chair,,Central,425.0,2,142.68,0.15
+2025-05-17,ORD-2025-0077,CUST-008,Hannah Abbott,PROD-071,Atlas Binder,Office Supplies,West,38.0,4,9.63,0.05
+2025-05-19,ORD-2025-0078,CUST-002,Bob Jones,PROD-205,Harbor Chair,Furniture,West,1000.0,5,200.56,0.2
+2025-05-21,ORD-2025-0079,CUST-005,Evan Wright,PROD-040,Vertex Monitor,Technology,West,570.0,2,61.18,0.05
+2025-05-23,ORD-2025-0080,CUST-008,Hannah Abbott,PROD-017,Quill Storage,Office Supplies,West,38.25,1,8.58,0.15
+2025-05-25,ORD-2025-0081,CUST-007,George Clark,PROD-071,Atlas Binder,Office Supplies,East,38.0,4,5.48,0.05
+2025-05-26,ORD-2025-0082,CUST-002,Bob Jones,PROD-474,Cedar Bookcase,Furniture,South,760.0,2,259.34,0.05
+2025-05-28,ORD-2025-0083,CUST-001,Alice Smith,PROD-250,Lumen Paper,Office Supplies,South,30.0,2,7.11,0.0
+2025-05-30,ORD-2025-0084,CUST-009,Ian Malcolm,PROD-250,Lumen Paper,Office Supplies,South,67.5,5,25.99,0.1
+2025-06-01,ORD-2025-0085,CUST-010,Julia Roberts,PROD-250,Lumen Paper,Office Supplies,West,48.0,4,11.22,0.2
+2025-06-03,ORD-2025-0086,CUST-008,Hannah Abbott,PROD-071,Atlas Binder,Office Supplies,Central,,3,10.03,0.05
+2025-06-04,ORD-2025-0087,CUST-009,Ian Malcolm,PROD-071,Atlas Binder,Office Supplies,Central,18.0,2,4.18,0.1
+2025-06-06,ORD-2025-0088,CUST-004,Diana Prince,PROD-205,Harbor Chair,Furniture,East,675.0,3,248.34,0.1
+2025-06-08,ORD-2025-0089,CUST-003,Charlie Brown,PROD-517,Pulse Headphones,Technology,West,255.0,2,78.59,0.15
+2025-06-10,ORD-2025-0090,CUST-002,Bob Jones,PROD-474,Cedar Bookcase,Furniture,South,1440.0,4,378.41,0.1
+2025-06-12,ORD-2025-0091,CUST-001,Alice Smith,PROD-040,Vertex Monitor,Technology,East,1020.0,4,378.88,0.15
+2025-06-13,ORD-2025-0092,CUST-010,Julia Roberts,PROD-474,Cedar Bookcase,Furniture,Central,1600.0,4,612.52,0.0
+2025-06-15,ORD-2025-0093,CUST-007,George Clark,PROD-474,Cedar Bookcase,Furniture,West,1600.0,5,543.94,0.2
+2025-06-17,ORD-2025-0094,CUST-008,Hannah Abbott,PROD-040,Vertex Monitor,Technology,South,765.0,3,187.95,0.15
+2025-06-19,ORD-2025-0095,CUST-006,Fiona Gallagher,PROD-474,Cedar Bookcase,Furniture,East,680.0,2,255.59,0.15
+2025-06-21,ORD-2025-0096,CUST-007,George Clark,PROD-017,Quill Storage,Office Supplies,South,225.0,,28.17,0.0
+2025-06-22,ORD-2025-0097,CUST-003,Charlie Brown,PROD-071,Atlas Binder,Office Supplies,Central,20.0,2,3.56,0.0
+2025-06-24,ORD-2025-0098,CUST-004,Diana Prince,PROD-071,Atlas Binder,Office Supplies,South,27.0,3,8.87,0.1
+2025-06-26,ORD-2025-0099,CUST-005,Evan Wright,PROD-474,Cedar Bookcase,Furniture,East,1200.0,3,289.31,0.0
+2025-06-28,ORD-2025-0100,CUST-006,Fiona Gallagher,PROD-040,Vertex Monitor,Technology,West,300.0,1,97.88,0.0
+2025-06-30,ORD-2025-0101,CUST-004,Diana Prince,PROD-785,Orbit Laptop,Technology,South,5700.0,5,977.91,0.05
+2025-07-01,ORD-2025-0102,CUST-002,Bob Jones,PROD-017,Quill Storage,Office Supplies,Central,76.5,2,23.7,0.15
+2025-07-03,ORD-2025-0103,CUST-003,Charlie Brown,PROD-017,Quill Storage,Office Supplies,West,225.0,5,75.0,0.0
+2025-07-05,ORD-2025-0104,CUST-005,Evan Wright,PROD-053,Nova Tablet,Technology,South,3000.0,5,1136.0,0.0
+2025-07-07,ORD-2025-0105,CUST-007,George Clark,PROD-040,Vertex Monitor,Technology,West,240.0,1,73.72,0.2
+2025-07-09,ORD-2025-0106,CUST-002,Bob Jones,PROD-205,Harbor Chair,Furniture,East,1250.0,5,423.59,0.0
+2025-07-10,ORD-2025-0107,CUST-006,Fiona Gallagher,PROD-250,Lumen Paper,Office Supplies,Central,54.0,4,6.52,0.1
+2025-07-12,ORD-2025-0108,CUST-001,Alice Smith,PROD-474,Cedar Bookcase,Furniture,Central,1600.0,4,368.09,0.0
+2025-07-14,ORD-2025-0109,CUST-008,Hannah Abbott,PROD-517,Pulse Headphones,Technology,Central,570.0,4,182.48,0.05
+2025-07-16,ORD-2025-0110,CUST-010,Julia Roberts,PROD-250,Lumen Paper,Office Supplies,Central,51.0,4,11.76,0.15
+2025-07-18,ORD-2025-0111,CUST-006,Fiona Gallagher,PROD-040,Vertex Monitor,Technology,West,55000.0,1,22000.0,0.1
+2025-07-19,ORD-2025-0112,CUST-008,Hannah Abbott,PROD-017,Quill Storage,Office Supplies,South,191.25,5,38.43,0.15
+2025-07-21,ORD-2025-0113,CUST-006,Fiona Gallagher,PROD-517,Pulse Headphones,Technology,Central,570.0,4,117.68,0.05
+2025-07-23,ORD-2025-0114,CUST-006,Fiona Gallagher,PROD-205,Harbor Chair,Furniture,West,1125.0,5,300.08,0.1
+2025-07-25,ORD-2025-0115,CUST-002,Bob Jones,PROD-040,Vertex Monitor,Technology,West,1020.0,4,271.88,0.15
+2025-07-27,ORD-2025-0116,CUST-008,Hannah Abbott,PROD-071,Atlas Binder,Office Supplies,West,40.0,4,5.12,0.0
+2025-07-28,ORD-2025-0117,CUST-007,George Clark,PROD-040,Vertex Monitor,Technology,Central,720.0,3,151.71,0.2
+2025-07-30,ORD-2025-0118,CUST-007,George Clark,PROD-250,Lumen Paper,Office Supplies,Central,40.5,3,12.59,0.1
+2025-08-01,ORD-2025-0119,CUST-005,Evan Wright,PROD-205,Harbor Chair,Furniture,Central,500.0,2,158.19,0.0
+2025-08-03,ORD-2025-0120,CUST-002,Bob Jones,PROD-250,Lumen Paper,Office Supplies,South,28.5,2,4.7,0.05
+2025-08-05,ORD-2025-0121,CUST-005,Evan Wright,PROD-017,Quill Storage,Office Supplies,East,180.0,5,33.28,0.2
+2025-08-06,ORD-2025-0122,CUST-004,Diana Prince,PROD-205,Harbor Chair,Furniture,East,450.0,2,69.22,0.1
+2025-08-08,ORD-2025-0123,CUST-009,Ian Malcolm,PROD-517,Pulse Headphones,Technology,Central,450.0,3,176.53,0.0
+2025-08-10,ORD-2025-0124,CUST-003,Charlie Brown,PROD-071,Atlas Binder,Office Supplies,South,10.0,1,2.72,0.0
+2025-08-12,ORD-2025-0125,CUST-008,Hannah Abbott,PROD-071,Atlas Binder,Office Supplies,Central,28.5,3,11.11,0.05
+2025-08-14,ORD-2025-0126,CUST-008,Hannah Abbott,PROD-053,Nova Tablet,Technology,East,510.0,1,126.24,0.15
+2025-08-15,ORD-2025-0127,CUST-003,Charlie Brown,PROD-517,Pulse Headphones,Technology,West,675.0,5,84.75,0.1
+2025-08-17,ORD-2025-0128,CUST-002,Bob Jones,PROD-250,Lumen Paper,Office Supplies,West,48.0,4,13.38,0.2
+2025-08-19,ORD-2025-0129,CUST-009,Ian Malcolm,PROD-474,Cedar Bookcase,Furniture,South,1360.0,4,257.32,0.15
+2025-08-21,ORD-2025-0130,CUST-005,Evan Wright,PROD-017,Quill Storage,Office Supplies,East,225.0,5,63.65,0.0
+2025-08-23,ORD-2025-0131,CUST-004,Diana Prince,PROD-040,Vertex Monitor,Technology,West,900.0,3,132.41,0.0
+2025-08-24,ORD-2025-0132,CUST-009,Ian Malcolm,PROD-053,Nova Tablet,Technology,South,1200.0,2,267.07,0.0
+2025-08-26,ORD-2025-0133,CUST-005,Evan Wright,PROD-785,Orbit Laptop,Technology,South,2160.0,2,674.11,0.1
+2025-08-28,ORD-2025-0134,CUST-002,Bob Jones,PROD-040,Vertex Monitor,Technology,West,720.0,3,214.82,0.2
+2025-08-30,ORD-2025-0135,CUST-007,George Clark,PROD-053,Nova Tablet,Technology,Central,2850.0,5,838.73,0.05
+2025-09-01,ORD-2025-0136,CUST-003,Charlie Brown,PROD-053,Nova Tablet,Technology,Central,570.0,1,192.54,0.05
+2025-09-02,ORD-2025-0137,CUST-008,Hannah Abbott,PROD-053,Nova Tablet,Technology,Central,2160.0,4,669.43,0.1
+2025-09-04,ORD-2025-0138,CUST-009,Ian Malcolm,PROD-250,Lumen Paper,Office Supplies,East,51.0,4,6.33,0.15
+2025-09-06,ORD-2025-0139,CUST-007,George Clark,PROD-661,Summit Desk,Furniture,West,2250.0,5,242.46,0.1
+2025-09-08,ORD-2025-0140,CUST-010,Julia Roberts,PROD-017,Quill Storage,Office Supplies,West,40.5,1,11.05,0.1
+2025-09-10,ORD-2025-0141,CUST-008,Hannah Abbott,PROD-250,Lumen Paper,Office Supplies,South,54.0,4,8.34,0.1
+2025-09-11,ORD-2025-0142,CUST-008,Hannah Abbott,PROD-053,Nova Tablet,Technology,Central,2160.0,4,480.61,0.1
+2025-09-13,ORD-2025-0143,CUST-002,Bob Jones,PROD-517,Pulse Headphones,Technology,Central,382.5,3,117.85,0.15
+2025-09-15,ORD-2025-0144,CUST-007,George Clark,PROD-250,Lumen Paper,Office Supplies,Central,12.75,1,1.61,0.15
+2025-09-17,ORD-2025-0145,CUST-006,Fiona Gallagher,PROD-053,Nova Tablet,Technology,East,1920.0,4,667.16,0.2
+2025-09-19,ORD-2025-0146,CUST-009,Ian Malcolm,PROD-071,Atlas Binder,Office Supplies,Central,,4,6.25,0.0
+2025-09-20,ORD-2025-0147,CUST-010,Julia Roberts,PROD-071,Atlas Binder,Office Supplies,West,40.0,4,6.44,0.0
+2025-09-22,ORD-2025-0148,CUST-005,Evan Wright,PROD-071,Atlas Binder,Office Supplies,West,40.0,4,4.35,0.0
+2025-09-24,ORD-2025-0149,CUST-003,Charlie Brown,PROD-205,Harbor Chair,Furniture,East,1250.0,5,332.09,0.0
+2025-09-26,ORD-2025-0150,CUST-004,Diana Prince,PROD-053,Nova Tablet,Technology,West,2400.0,4,706.35,0.0
+2025-09-28,ORD-2025-0151,CUST-008,Hannah Abbott,PROD-205,Harbor Chair,Furniture,South,1125.0,5,252.73,0.1
+2025-09-29,ORD-2025-0152,CUST-008,Hannah Abbott,PROD-040,Vertex Monitor,Technology,West,960.0,4,137.66,0.2
+2025-10-01,ORD-2025-0153,CUST-010,Julia Roberts,PROD-250,Lumen Paper,Office Supplies,South,30.0,2,5.49,0.0
+2025-10-03,ORD-2025-0154,CUST-006,Fiona Gallagher,PROD-250,Lumen Paper,Office Supplies,Central,45.0,3,8.32,0.0
+2025-10-05,ORD-2025-0155,CUST-010,Julia Roberts,PROD-017,Quill Storage,Office Supplies,South,171.0,4,40.01,0.05
+2025-10-07,ORD-2025-0156,CUST-006,Fiona Gallagher,PROD-661,Summit Desk,Furniture,Central,2000.0,5,426.33,0.2
+2025-10-08,ORD-2025-0157,CUST-004,Diana Prince,PROD-040,Vertex Monitor,Technology,South,1275.0,5,216.84,0.15
+2025-10-10,ORD-2025-0158,CUST-001,Alice Smith,PROD-661,Summit Desk,Furniture,West,1700.0,4,366.9,0.15
+2025-10-12,ORD-2025-0159,CUST-008,Hannah Abbott,PROD-785,Orbit Laptop,Technology,Central,1920.0,2,748.04,0.2
+2025-10-14,ORD-2025-0160,CUST-002,Bob Jones,PROD-071,Atlas Binder,Office Supplies,East,8.0,1,2.99,0.2
+2025-10-16,ORD-2025-0161,CUST-003,Charlie Brown,PROD-474,Cedar Bookcase,Furniture,Central,800.0,2,192.68,0.0
+2025-10-17,ORD-2025-0162,CUST-006,Fiona Gallagher,PROD-017,Quill Storage,Office Supplies,South,180.0,4,64.0,0.0
+2025-10-19,ORD-2025-0163,CUST-006,Fiona Gallagher,PROD-071,Atlas Binder,Office Supplies,West,50.0,5,14.26,0.0
+2025-10-21,ORD-2025-0164,CUST-005,Evan Wright,PROD-040,Vertex Monitor,Technology,East,255.0,1,100.34,0.15
+2025-10-23,ORD-2025-0165,CUST-008,Hannah Abbott,PROD-517,Pulse Headphones,Technology,East,450.0,3,51.21,0.0
+2025-10-25,ORD-2025-0166,CUST-005,Evan Wright,PROD-661,Summit Desk,Furniture,South,1275.0,3,183.18,0.15
+2025-10-26,ORD-2025-0167,CUST-010,Julia Roberts,PROD-517,Pulse Headphones,Technology,South,285.0,2,35.25,0.05
+2025-10-28,ORD-2025-0168,CUST-010,Julia Roberts,PROD-040,Vertex Monitor,Technology,South,960.0,4,137.22,0.2
+2025-10-30,ORD-2025-0169,CUST-005,Evan Wright,PROD-071,Atlas Binder,Office Supplies,South,30.0,3,11.09,0.0
+2025-11-01,ORD-2025-0170,CUST-005,Evan Wright,PROD-250,Lumen Paper,Office Supplies,Central,30.0,2,6.98,0.0
+2025-11-03,ORD-2025-0171,CUST-010,Julia Roberts,PROD-205,Harbor Chair,Furniture,Central,900.0,4,213.35,0.1
+2025-11-04,ORD-2025-0172,CUST-004,Diana Prince,PROD-474,Cedar Bookcase,Furniture,Central,1600.0,4,273.86,0.0
+2025-11-06,ORD-2025-0173,CUST-010,Julia Roberts,PROD-205,Harbor Chair,Furniture,South,750.0,3,295.04,0.0
+2025-11-08,ORD-2025-0174,CUST-005,Evan Wright,PROD-785,Orbit Laptop,Technology,South,6000.0,5,2239.11,0.0
+2025-11-10,ORD-2025-0175,CUST-005,Evan Wright,PROD-040,Vertex Monitor,Technology,West,1350.0,5,223.7,0.1
+2025-11-12,ORD-2025-0176,CUST-010,Julia Roberts,PROD-205,Harbor Chair,Furniture,East,500.0,2,185.51,0.0
+2025-11-13,ORD-2025-0177,CUST-005,Evan Wright,PROD-071,Atlas Binder,Office Supplies,West,8.0,1,1.68,0.2
+2025-11-15,ORD-2025-0178,CUST-002,Bob Jones,PROD-205,Harbor Chair,Furniture,West,637.5,3,97.34,0.15
+2025-11-17,ORD-2025-0179,CUST-009,Ian Malcolm,PROD-661,Summit Desk,Furniture,West,2000.0,5,748.09,0.2
+2025-11-19,ORD-2025-0180,CUST-005,Evan Wright,PROD-071,Atlas Binder,Office Supplies,South,27.0,3,9.21,0.1
+2025-11-21,ORD-2025-0181,CUST-002,Bob Jones,PROD-517,Pulse Headphones,Technology,Central,255.0,2,99.5,0.15
+2025-11-22,ORD-2025-0182,CUST-002,Bob Jones,PROD-474,Cedar Bookcase,Furniture,South,360.0,1,93.95,0.1
+2025-11-24,ORD-2025-0183,CUST-006,Fiona Gallagher,PROD-205,Harbor Chair,Furniture,Central,1062.5,5,368.4,0.15
+2025-11-26,ORD-2025-0184,CUST-002,Bob Jones,PROD-040,Vertex Monitor,Technology,Central,1200.0,4,343.04,0.0
+2025-11-28,ORD-2025-0185,CUST-010,Julia Roberts,PROD-040,Vertex Monitor,Technology,Central,255.0,1,95.07,0.15
+2025-11-30,ORD-2025-0186,CUST-007,George Clark,PROD-053,Nova Tablet,Technology,Central,1200.0,2,460.65,0.0
+2025-12-01,ORD-2025-0187,CUST-008,Hannah Abbott,PROD-053,Nova Tablet,Technology,West,570.0,1,208.72,0.05
+2025-12-03,ORD-2025-0188,CUST-007,George Clark,PROD-071,Atlas Binder,Office Supplies,West,24.0,3,5.42,0.2
+2025-12-05,ORD-2025-0189,CUST-007,George Clark,PROD-053,Nova Tablet,Technology,Central,1920.0,4,427.07,0.2
+2025-12-07,ORD-2025-0190,CUST-001,Alice Smith,PROD-661,Summit Desk,Furniture,West,850.0,2,198.4,0.15
+2025-12-09,ORD-2025-0191,CUST-006,Fiona Gallagher,PROD-053,Nova Tablet,Technology,Central,1440.0,3,533.53,0.2
+2025-12-10,ORD-2025-0192,CUST-001,Alice Smith,PROD-474,Cedar Bookcase,Furniture,South,1140.0,3,445.13,0.05
+2025-12-12,ORD-2025-0193,CUST-002,Bob Jones,PROD-040,Vertex Monitor,Technology,Central,1500.0,5,172.76,0.0
+2025-12-14,ORD-2025-0194,CUST-004,Diana Prince,PROD-517,Pulse Headphones,Technology,West,712.5,5,85.92,0.05
+2025-12-16,ORD-2025-0195,CUST-010,Julia Roberts,PROD-040,Vertex Monitor,Technology,East,540.0,2,179.45,0.1
+2025-12-18,ORD-2025-0196,CUST-005,Evan Wright,PROD-517,Pulse Headphones,Technology,West,240.0,2,42.05,0.2
+2025-12-19,ORD-2025-0197,CUST-002,Bob Jones,PROD-785,Orbit Laptop,Technology,West,2400.0,2,497.93,0.0
+2025-12-21,ORD-2025-0198,CUST-010,Julia Roberts,PROD-661,Summit Desk,Furniture,West,475.0,1,85.31,0.05
+2025-12-23,ORD-2025-0199,CUST-007,George Clark,PROD-250,Lumen Paper,Office Supplies,Central,15.0,1,3.64,0.0
+2025-12-25,ORD-2025-0200,CUST-009,Ian Malcolm,PROD-017,Quill Storage,Office Supplies,East,38.25,1,9.61,0.15
+,,,,,,,,,,,
+2025-12-25,ORD-2025-9999,,,,,,,,,,
+2025-01-19,ORD-2025-0011,CUST-003,Charlie Brown,PROD-661,Summit Desk,Furniture,East,1425.0,3,429.0,0.05
+2025-02-24,ORD-2025-0031,CUST-001,Alice Smith,PROD-053,Nova Tablet,Technology,East,570.0,1,68.53,0.05
+2025-06-30,ORD-2025-0101,CUST-004,Diana Prince,PROD-785,Orbit Laptop,Technology,South,5700.0,5,977.91,0.05

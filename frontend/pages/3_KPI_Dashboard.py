@@ -666,6 +666,10 @@ def _map_chart(df, state_col, metric_col):
                 fig.update_geos(fitbounds="locations", visible=False)
                 fig.update_layout(**_chart_layout(150), dragmode=False,
                                   coloraxis_showscale=False,
+                                  geo=dict(bgcolor="rgba(0,0,0,0)",
+                                           subunitcolor="rgba(255,255,255,0.08)"))
+                return fig
+                
         # Generic Regions Bubble Map Fallback (For generic regions like "West", "East", "Central")
         if len(g) > 0:
             region_coords = {
